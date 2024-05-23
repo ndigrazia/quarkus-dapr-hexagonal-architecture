@@ -35,7 +35,7 @@ defined by the W3C specification in your invocation chains.
 3. Define scopes for a group of related services. For example, define a scope between
 a service and its DAPR data store. 
 4. Add a configuration resource (yaml file) with an endpoint address to a distributed
- tracing system (Zipkin or Jaeger), and also include a sampling rate.
+ tracing system (Zipkin or Jaeger or others), and also include a sampling rate.
 5. Add code to a readiness method that checks the status of the sidecar, and also include 
 code for checking the status of a service that your service depends on. For example, a 
 database service.
