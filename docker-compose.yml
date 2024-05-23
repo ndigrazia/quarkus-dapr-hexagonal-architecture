@@ -1,0 +1,35 @@
+version: '3.7'
+
+# To run a specific version of Jaeger, use environment variable, e.g.:
+#     JAEGER_VERSION=1.52 docker compose up
+
+services:
+  jaeger:
+    image: jaegertracing/all-in-one:${JAEGER_VERSION:-latest}
+    ports:
+      - "14250:14250"
+      - "14268:14268"
+      - "16686:16686"
+      - "4317:4317"
+      - "4318:4318"
+      - "5775:5775"
+      - "5778:5778"
+      - "6831:6831"
+      - "6832:6832"
+      - "9411:9411"
+    command: ["all"]
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+      - COLLECTOR_ZIPKIN_HOST_PORT=:9411
+    networks:
+      - network-example
+
+  redis:
+    image: docker.io/redis:6
+    ports:
+      - "6379:6379"
+    networks:
+      - network-example
+
+networks:
+  network-example:

@@ -1,0 +1,18 @@
+version: 1
+common:
+  resourcesPath: ./resources
+apps:
+  - appID: router-inventory-service 
+    appPort: 8080
+    appProtocol: http
+    daprHTTPPort: 3500
+    daprGRPCPort: 50001
+    appDirPath: ../router-inventory-service
+    command: ["java", "-jar", "target/quarkus-app/quarkus-run.jar"]
+  - appID: networking-inventory-service 
+    appPort: 8090
+    appProtocol: http
+    daprHTTPPort: 3501
+    daprGRPCPort: 50002
+    appDirPath: ../networking-inventory-service
+    command: ["java", "-jar", "target/quarkus-app/quarkus-run.jar"]
