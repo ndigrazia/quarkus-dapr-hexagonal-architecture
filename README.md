@@ -1,4 +1,4 @@
-# quarkus-hexagonal-architecture
+# quarkus-dapr-hexagonal-architecture
 
 ## Quarkus
 

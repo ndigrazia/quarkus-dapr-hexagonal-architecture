@@ -1,4 +1,4 @@
-# federation-starships
+# Networking Inventory Service
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
