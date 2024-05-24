@@ -1,4 +1,4 @@
-package com.telefonica.hispam.federationstarships;
+package com.telefonica.hispam.networking;
 
 import io.quarkus.test.junit.QuarkusTest;
 //import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ import io.quarkus.test.junit.QuarkusTest;
 //import static org.hamcrest.CoreMatchers.is;
 
 @QuarkusTest
-class FederationStarshipsApplicationTest {
+class NetworkingInventoryApplicationTest {
    /*@Test
     void testHelloEndpoint() {
         given()
