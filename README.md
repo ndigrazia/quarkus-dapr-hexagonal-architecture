@@ -1,5 +1,13 @@
 # quarkus-dapr-hexagonal-architecture
 
+## Hexagonal Architecture
+
+![alt text](images/hexa_architecture.jpg)
+
+## Diagram
+
+![alt text](images/quarkus-dapr-hexa-architecture.drawio.png)
+
 ## Quarkus
 
 Step 1: Compile Router Inventory Service 
