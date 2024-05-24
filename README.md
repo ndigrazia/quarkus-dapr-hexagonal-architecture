@@ -37,8 +37,8 @@ Run this command: dapr run -f dapr/
 ## Notes
 
 1. Use a DAPR framework for invoking DAPR services. You shouldn't invoke DAPR services using 
- an HTTP request.
-2. If you invoke DAPR's services using an HTTP request, don't forget to add headers 
+ HTTP requests.
+2. If you invoke DAPR's services using HTTP requests, don't forget to add headers 
 defined by the W3C specification in your invocation chains.
 3. Define scopes for a group of related services. For example, define a scope between
 a service and its DAPR data store. 
