@@ -2,7 +2,7 @@
 
 ## Hexagonal Architecture
 
-![alt text](images/hexa_architecture.jpg)
+![alt text](images/hexa-architecture.drawio.png)
 
 ## Diagram
 
